@@ -67,7 +67,8 @@ spec:
               image: registry.access.redhat.com/ubi8/ubi-micro:8.4
               workingDir: $(workspaces.source.path)
               script: |
-                sleep 60
+                echo 'hi 2 here'
+                sleep 50
                 exit 0
   workspaces:
   - name: source
